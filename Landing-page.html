@@ -75,6 +75,33 @@
             transform: translate(-2px -2px);
             border-radius: 50px;
         }
+        .bottom-left-button {
+            font-family: my2;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            border: 5px solid #550604;
+            background-color: #C0342F;
+            box-shadow: 2px 2px 0 0 #e4dcdc, 4px 4px 0 0 #0f172a;
+            transition-duration: 200ms;
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            z-index: 1000; /* Ensure the button is above other elements */
+        }
+
+        .bottom-left-button:hover {
+            box-shadow: 3px 3px rgb(255, 255, 255), 6px 6px 0 0 #0f172a;
+            background-color: #FDF8EB;
+            color: #5D3326;
+            transform: translate(-2px -2px);
+            border-radius: 50px; /* Button background color on hover */
+        }
 
         h3{
             display: block;
@@ -218,6 +245,7 @@
 
       <button class="mute-unmute-btn" id="mute-btn">Mute</button>
       <button class="mute-unmute-btn" id="unmute-btn" style="display:none;">Unmute</button>
+      <a href="gamepage.html" class="bottom-left-button">Play Game</a>  
 
       <script>
 //ca button
