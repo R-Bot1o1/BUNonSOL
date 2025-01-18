@@ -42,7 +42,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    width: 200px;
+    width: 150px; /* Default size for the basket */
     height: auto;
     transform: translateX(-50%);
 }
@@ -51,8 +51,8 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px; /* Default size for the bun */
+    height: auto;
     transform: translateX(-50%);
 }
 
@@ -94,4 +94,19 @@ body {
 
 .score-animate {
     animation: scoreAnimation 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    #bun {
+        width: 50px; /* Smaller size for the bun on mobile */
+    }
+
+    #basket {
+        width: 75px; /* Smaller size for the basket on mobile */
+    }
+
+    .miss {
+        width: 30px; /* Smaller size for the miss buns on mobile */
+        height: 30px;
+    }
 }
