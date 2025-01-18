@@ -109,4 +109,9 @@ body {
         width: 30px; /* Smaller size for the miss buns on mobile */
         height: 30px;
     }
+
+    #score {
+        top: 30px; /* Lower the position of the score */
+        color: #fff; /* Change the color of the text to white */
+    }
 }
